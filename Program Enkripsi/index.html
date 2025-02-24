@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSA Encryption and Decryption</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- DedSec Logo -->
+    <div class="logo">
+        <img src="dedsec.png" alt="DedSec Logo">
+    </div>
+
+    <!-- Main Title -->
+    <h1>RSA Encryption and Decryption</h1>
+
+    <!-- Section Container -->
+    <div class="container">
+        <!-- Key Generation Section -->
+        <div class="section">
+            <h2>Key Generation</h2>
+            <label for="p">Prime Number p:</label>
+            <input type="number" id="p" placeholder="Enter a prime number (e.g., 61)">
+
+            <label for="q">Prime Number q:</label>
+            <input type="number" id="q" placeholder="Enter another prime number (e.g., 53)">
+
+            <button onclick="generateKeys()">Generate Keys</button>
+            <div class="output" id="keys"></div>
+        </div>
+
+        <!-- Encryption Section -->
+        <div class="section">
+        <h2>Encryption</h2>
+        <label for="plaintext">Message (Plaintext):</label>
+        <textarea id="plaintext" placeholder="Enter your message"></textarea>
+
+        <button onclick="encrypt()">Encrypt</button>
+        <div class="output" id="ciphertext"></div>
+        <button id="copyButton" onclick="copyCiphertext()" style="display:none; margin-top:10px;">
+            📋
+        </button>
+        
+    </div>
+
+
+        <!-- Decryption Section -->
+        <div class="section">
+            <h2>Decryption</h2>
+            <label for="cipher">Ciphertext:</label>
+            <textarea id="cipher" placeholder="Enter the ciphertext"></textarea>
+
+            <button onclick="decrypt()">Decrypt</button>
+            <div class="output" id="decrypted"></div>
+        </div>
+
+        <!-- Steps Section -->
+        <div class="section">
+            <h2>Calculation Steps</h2>
+            <div class="output" id="steps"></div>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>

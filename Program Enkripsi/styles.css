@@ -1,0 +1,131 @@
+/* Global Styles */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #c9d1d9;
+}
+
+h1 {
+    text-align: center;
+    color: #00ff88;
+    margin-top: 20px;
+    text-shadow: 0 0 10px #00ff88;
+    letter-spacing: 2px;
+}
+
+/* DedSec Logo */
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 300px;
+    filter: drop-shadow(0 0 10px #00ff88); /* Neon glow */
+}
+
+/* Container Styles */
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Section Card */
+.section {
+    flex: 1 1 calc(33.333% - 40px); /* Responsive flex layout */
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 136, 0.2);
+    border: 1px solid #333;
+    padding: 20px;
+    min-width: 250px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px #00ff88;
+}
+
+h2 {
+    color: #00ff88;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #00ff88;
+    display: inline-block;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #9cd2b5;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #0d0d0d;
+    border: 1px solid #444;
+    border-radius: 5px;
+    color: #00ff88;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: inset 0 0 5px #00ff88;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #00ff88;
+    box-shadow: 0 0 10px #00ff88;
+}
+
+button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    background-color: #00ff88;
+    color: #121212;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 0 10px #00ff88;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #00995e;
+    box-shadow: 0 0 20px #00ff88;
+}
+
+.output {
+    margin-top: 15px;
+    background-color: #121212;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    color: #00ff88;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: inset 0 0 10px #00ff88;
+    text-align: left;
+}
+
+#copyButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5em; /* Ukuran ikon */
+    color: #aaa; /* Warna ikon */
+    transition: color 0.3s ease;
+}
+
+#copyButton:hover {
+    color: #fff; /* Warna ikon ketika dihover */
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Language Translator</title>
+</head>
+<body>
+    <h1>Language Translator</h1>
+    <textarea id="textToTranslate" placeholder="Enter text to translate"></textarea>
+    <br>
+    <label for="sourceLang">From: </label>
+    <select id="sourceLang">
+        <option value="en">English</option>
+        <option value="id">Indonesian</option>
+        <!-- Tambahkan lebih banyak pilihan bahasa sesuai kebutuhan -->
+    </select>
+    <label for="targetLang">To: </label>
+    <select id="targetLang">
+        <option value="es">Spanish</option>
+        <option value="id">Indonesian</option>
+        <!-- Tambahkan lebih banyak pilihan bahasa sesuai kebutuhan -->
+    </select>
+    <br>
+    <button onclick="translateText()">Translate</button>
+    <h2>Translated Text:</h2>
+    <p id="translatedText"></p>
+
+    <script src="translator.js"></script>
+</body>
+</html>
